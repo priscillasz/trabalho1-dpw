@@ -1,15 +1,13 @@
 @charset "UTF-8";
 
 body {
-    background-color: #b5e9e4;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     }
 
 main {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #ff7a3783;
     width: 900px;
     padding: 10px;
     margin: auto;
