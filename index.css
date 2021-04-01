@@ -6,13 +6,6 @@ body {
     font-size: 20px;
     }
 
-main {
-    background-color: white;
-    width: 900px;
-    padding: 10px;
-    margin: auto;
-}
-
 h1 {
     text-align: center;
 }
@@ -67,3 +60,21 @@ a:active {
 p {
     text-align: justify;
 }
+
+
+/* testando */
+
+.imagensorigem {
+    float: left
+}
+
+img {
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    
+}
+
