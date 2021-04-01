@@ -34,7 +34,7 @@ h1 {
     }
 
 .navbar li a:hover {
-    background-color: yellow;
+    background-color: #88d8c0;
     }
 
 .navbar li a:hover {
@@ -81,7 +81,6 @@ img {
 
 .conteudo {
     display: table;
-
 }
 
 .imagem {
@@ -93,9 +92,19 @@ img {
 .texto {
     display: table-cell;
     float: left;
-    width: 400px;
+    width: 450px;
     margin-top: -20px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+/* imagens origem */
+#img01 {
+    width: 400px;
+}
+.imagem02 {
+    float: right;
+    margin-left: 20px;
+    margin-top:  60px;
 }
