@@ -2,13 +2,14 @@
 
 body {
     background-color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 20px;
     }
 
 h1 {
-    text-align: center;
+    text-align: left;
 }
+
 
     /* configurações do menu: */
 .navbar {
@@ -16,10 +17,10 @@ h1 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:lightblue;
-    border-radius: 5px;
-    }
+    background-color:white;
+    float: right;
 
+    }
 .navbar li {
     float: left;
     }
@@ -40,7 +41,7 @@ h1 {
     color: lightcoral;
 }
 
-    /* configurações dos links: */
+    /* configurações dos links */
 a:link {
     color: #BF1744; text-decoration: none;
 }
@@ -57,6 +58,8 @@ a:active {
     color: orange; text-decoration: none; 
 }
 
+/*----------------------*/
+
 p {
     text-align: justify;
 }
@@ -64,17 +67,35 @@ p {
 
 /* testando */
 
-.imagensorigem {
-    float: left
-}
-
 img {
-    width: 500px;
+    width: 450px;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    
+
+/* corpo */
+
+.corpo {
+    margin: auto;
+    width: 960px;
 }
 
+.conteudo {
+    display: table;
+
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+    margin-bottom: 22px;
+}
+
+.texto {
+    display: table-cell;
+    float: left;
+    width: 400px;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
