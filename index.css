@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+    background-color: #b5e9e4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    }
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #ff7a3783;
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+    /* configurações do menu: */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:lightblue;
+    border-radius: 5px;
+    }
+
+.navbar li {
+    float: left;
+    }
+
+.navbar li a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.navbar li a:hover {
+    background-color: yellow;
+    }
+
+.navbar li a:hover {
+    color: lightcoral;
+}
+
+    /* configurações dos links: */
+a:link {
+    color: #BF1744; text-decoration: none;
+}
+
+a:visited {
+    color: #D9117F; text-decoration: none;
+}
+
+a:hover {
+    color: #107369; text-decoration: none; 
+}
+
+a:active {
+    color: orange; text-decoration: none; 
+}
+
+p {
+    text-align: justify;
+}
