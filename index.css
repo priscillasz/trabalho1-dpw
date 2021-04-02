@@ -43,7 +43,7 @@ h1 {
     color: lightcoral;
 }
 
-    /* configurações dos links */
+    /* CONFIGURAÇÕES DOS LINKS GERAIS */
 a:link {
     color: #BF1744; text-decoration: none;
 }
@@ -62,7 +62,7 @@ a:active {
 
 /*----------------------*/
 
-        /* CONFIGURAÇÕES DO CORPO DO QUIZ */
+        /* CONFIGURAÇÕES DO CORPO DO ORIGEM.HTML */
 main {
     background-color: white;
     width: 900px;
