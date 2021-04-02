@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+    /*-------------GERAL-------------*/
 body {
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -12,7 +13,14 @@ h1 {
     text-align: center;
 }
 
-    /* configurações do menu: */
+h1, h2, h3, h4 {
+    color: #33C0B8;
+}
+p {
+    text-align: justify;
+}
+
+    /*-------------MENU-------------*/
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -31,7 +39,6 @@ h1 {
     padding: 16px;
     text-align: center;
     text-decoration: none;
-    
     }
 
 .navbar li a:hover {
@@ -43,35 +50,38 @@ h1 {
     color: lightcoral;
 }
 
-    /* CONFIGURAÇÕES DOS LINKS GERAIS */
+.navline {
+    width: 900px;
+    border: 0.5px solid #33C0B8;
+}
+
+    /*-------------LINKS GERAIS-------------*/
 a:link {
-    color: #BF1744; text-decoration: none;
+    color: #BF1744; 
+    text-decoration: none;
 }
 
 a:visited {
-    color: #D9117F; text-decoration: none;
+    color: #D9117F; 
+    text-decoration: none;
 }
 
 a:hover {
-    color: #107369; text-decoration: none; 
+    color: #107369; 
+    text-decoration: none; 
 }
 
 a:active {
-    color: orange; text-decoration: none; 
+    color: orange; 
+    text-decoration: none; 
 }
 
-/*----------------------*/
-
-        /* CONFIGURAÇÕES DO CORPO DO ORIGEM.HTML */
-main {
+        /*-------------ORIGEM------------- */
+.origem {
     background-color: white;
     width: 900px;
     padding: 10px;
     margin: auto;
-}
-
-p {
-    text-align: justify;
 }
 
 img {
@@ -83,7 +93,7 @@ img {
 #img2 {
     float: right;
     width: 400px;
-    margin-left: 20px;
+    margin-left: 13px;
 }
 
 #img3 {
@@ -95,4 +105,120 @@ img {
     font-style: italic;
 }
 
+.b {
+    list-style-type: lower-roman;
+}
 
+    /*-------------QUIZ-------------*/
+main {
+    background-color: white;
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+.campoquiz {
+    justify-content: center;
+    margin-left: 17%;
+}
+
+.pergunta {
+    font-weight: bold;
+    color: #33C0B8;
+}
+
+li {
+    color: black;
+}
+
+input, select, button {
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* .grupo:before, .grupo:after {
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+*/
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+/*fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+} */
+
+.campo input[type="text"], .campo select {
+    padding: 0.2em;
+    border: 1px solid #107369;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #c7f7f3;
+}
+
+.botao {
+    font-size: 17px;
+    background: #1da19b;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.botao:hover {
+    background: #bbfff6;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select {
+    cursor: pointer;
+}
+
+        /*-------------SCROLLBAR-------------*/
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 0px grey;  /* apagar essa linha dps */
+background-color: #ffffff;
+  }
+   
+    /* Handle */
+::-webkit-scrollbar-thumb {
+background: #33C0B8; 
+border-radius: 10px;
+}
+
+    /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #33C0B8; 
+}
