@@ -96,21 +96,38 @@ img {
     margin-left: 13px;
 }
 
-#img3 {
+.conteudo2 {
+    position: relative;
     width: 900px;
 }
 
-#descricao-img3 {
-    font-size: 16px;
-    font-style: italic;
+#img3 {
+    display: block;
+    width: 900px;
 }
 
-.b {
-    list-style-type: lower-roman;
+.overlay {
+    position: absolute; 
+    bottom: -600px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 860px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+  
+.conteudo2:hover .overlay {
+    opacity: 1;
 }
 
     /*-------------QUIZ-------------*/
-main {
+
+.mainquiz {
     background-color: white;
     width: 900px;
     padding: 10px;
@@ -175,50 +192,37 @@ input, select, button {
 }
 
 .botao {
-    font-size: 17px;
-    background: #1da19b;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.botao:hover {
-    background: #bbfff6;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-.botao, select {
+    background-color: #33C0B8;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
     cursor: pointer;
 }
 
+.botao:hover {
+    background: #107369;
+    text-shadow: none;
+}
         /*-------------SCROLLBAR-------------*/
-    /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
-  /* Track */
 ::-webkit-scrollbar-track {
-box-shadow: inset 0 0 0px grey;  /* apagar essa linha dps */
-background-color: #ffffff;
-  }
+    box-shadow: inset 0 0 0px grey;  /* apagar essa linha dps */
+    background-color: #ffffff;
+}
    
-    /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #33C0B8; 
-border-radius: 10px;
+    background: #33C0B8; 
+    border-radius: 15px;
 }
 
-    /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #33C0B8; 
+    background: #33C0B8; 
 }
