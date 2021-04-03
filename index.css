@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
     /*-------------GERAL-------------*/
 body {
@@ -16,14 +15,14 @@ h1 {
 }
 
 h1, h2, h3, h4 {
-    color: #33C0B8;
+    color: #F20519;
 }
 p {
     text-align: justify;
 }
 
 strong{
-    color: #BF3604;
+    color: #0477BF;
 }
     /*-------------SCROLLBAR-------------*/
 ::-webkit-scrollbar {
@@ -78,39 +77,40 @@ body, html {
 .descricaotopo{
     padding-top: 20px;
 }
+
     /*-------------MENU-------------*/
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    }
+}
     
 .navbar li {
     display: inline-block;
-    }
+}
 
 .navbar li a {
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 16px;
     text-align: center;
     text-decoration: none;
-    }
-
-.navbar li a:hover {
-    background-color: #88d8c0;
-    border-radius: 20px;
-    }
-
-.navbar li a:hover {
-    color: lightcoral;
 }
 
-.navline {
-    width: 900px;
-    border: 0.5px solid #33C0B8;
+.navbar li a:hover {
+    background-color: white;
+}
+
+.navbar li a:hover {
+    color: black;
 }
 
     /*-------------LINKS GERAIS-------------*/
@@ -150,7 +150,32 @@ a:active {
     font-weight: bold;
     font-size: 25px;
     color: black;
-  }
+}
+
+#tabela {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+table {
+    width: 60%;
+    border-spacing: 5px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #DCDCDC;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
 
     /*-------------ORIGEM-------------*/
 .origem {
@@ -235,15 +260,6 @@ input, select, button {
     border-radius: 5px;
 }
 
-/* .grupo:before, .grupo:after {
-    display: table;
-}
-
-.grupo:after {
-    clear: both;
-}
-*/
-
 .campo {
     margin-bottom: 1em;
 }
@@ -252,11 +268,6 @@ input, select, button {
     margin-bottom: 0.2em;
     display: block;
 }
-
-/*fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
-} */
 
 .campo input[type="text"], .campo select {
     padding: 0.2em;
@@ -291,7 +302,7 @@ input, select, button {
     text-shadow: none;
 }
 
-    /*-------------QUIZ-------------*/
+    /*-------------REFERÊNCIAS-------------*/
 .referencias {
     background-color: white;
     width: 900px;
