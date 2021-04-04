@@ -273,6 +273,13 @@ hr {
     border-top: 1px dotted red;
 }
 
+.c li {
+    list-style-type: square;
+}
+
+.d li {
+    list-style-type: square;
+}
     /*-------------QUIZ-------------*/
 .mainquiz {
     background-color: white;
@@ -284,7 +291,7 @@ hr {
 
 .campoquiz {
     justify-content: center;
-    margin-left: 17%;
+    margin-left: 10%;
 }
 
 .pergunta {
@@ -296,13 +303,13 @@ li {
     color: black;
 }
 
-input, select {
-    font-size: 1em;
+input, select, textarea {
+    font-size: 16px;
     border-radius: 5px;
 }
 
 .campo {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .campo label {
@@ -310,7 +317,7 @@ input, select {
     display: block;
 }
 
-.campo input[type="text"], .campo select {
+.campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #105773;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -318,10 +325,10 @@ input, select {
 }
 
 .campo select option {
-    padding-right: 1em;
+    padding-right: 16px;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
+.campo select:focus, .campo textarea:focus {
     background: #f7c7c7;
 }
 
@@ -352,21 +359,22 @@ button {
     /*-------------REFERÊNCIAS-------------*/
 .referencias {
     background-color: white;
-    width: 900px;
+    width: 700px;
     padding: 10px;
     margin: auto;
     max-width: 60%;
 }
 
 .referencia {
-    border: 1px solid white;
-    border-radius: 10px;
-    height: 700px;
-    width: 400px;
+    border: 1px solid #D3D3D3;
+    border-radius: 0px;
+    height: 410px;
+    width: 620px;
     margin-right: 20px;
     margin-bottom: 20px;
     align-items: center;
-    background-color: lavender;
+    background-color: white;
+    overflow-y: scroll;
 }
 
 .referencia2 {
@@ -376,6 +384,8 @@ button {
 
 .textoref {
     padding: 10px;
+    margin-top: -13px;
+    padding-right: 12px;
 }
 
 .titleref {
@@ -387,7 +397,6 @@ button {
 
 .imagemref {
     float: left;
-    width: 377px;
+    width: 52%;
     padding-left: 12px;
-    padding-bottom: 10px;
 }

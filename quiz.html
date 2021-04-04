@@ -27,9 +27,11 @@
     </div>
         
         <main class="mainquiz">
+
             <!--QUIZ-->
             <section class="campoquiz">
-                <h2>Questionário</h2>
+                <h2>Quiz</h2>
+                <p>A seguir, foi preparada uma série de questões sobre o álbum Don't Call Me e a carreira musical do SHINee. </p>
                 <form>
                     <!--PERGUNTA 1-->
                     <div class="campo">
@@ -67,7 +69,7 @@
                             <input type="radio" name="fav" value="dancepop">Dance-pop
                         </label>
                         <label>
-                            <input type="radio" name="fav" value="bubblegumpop">Bubblegum Pop
+                            <input type="radio" name="fav" value="kpop">K-pop
                         </label>
                         <label>
                             <input type="radio" name="fav" value="experimentalpop">Experimental Pop
@@ -85,30 +87,45 @@
                             <input type="radio" name="fav" value="outros">Outros
                         </label>
                     </div>
-                    
-                    <div>
-                        <label class="pergunta">Qual foi a música de debut do SHINee?</label>
-                    </div>
-                    <!--PERGUNTA 2-->
-                    <div class="campo">
-                        <label class="pergunta">6. Qual característica do SHINee te chama mais atenção?</label>
-                        <label>
-                            <input type="radio" name="carfav" value="coreografias">Suas coreografias
-                        </label>
-                        <label>
-                            <input type="radio" name="carfav" value="vocais">Seus vocais
-                        </label>
-                        <label>
-                            <input type="radio" name="carfav" value="estilo">Seu estilo
-                        </label>
-                        <label>
-                            <input type="radio" name="carfav" value="versatilidade">Sua versatilidade
-                        </label>
 
-                    </div>
                     <!--PERGUNTA 3-->
                     <div class="campo">
-                        <label class="pergunta">7. Qual o seu álbum favorito do Shinee?</label>
+                        <label class="pergunta">3. Quais das características do SHINee te chamam mais atenção?</label>
+                        <label>
+                            <input type="checkbox" name="carfav" value="vocais">Seus vocais
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carfav" value="performances">Suas performances
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carfav" value="coreografias">Suas coreografias
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carfav" value="estilo">Seu estilo
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carfav" value="versatilidade">Sua versatilidade
+                        </label>
+                    </div>
+                    <!--PERGUNTA 4-->
+                    <div class="campo">
+                        <label class="pergunta">4. Qual a sua faixa favorita do álbum <em>Don't Call Me?</em></label>
+                        <select name="faixadcm">
+                            <option value="dontcallme">Don't Call Me</option>
+                            <option value="heartattack">Heart Attack</option>
+                            <option value="marryyou">Marry You</option>
+                            <option value="code">Code</option>
+                            <option value="ireallywantyou">I Really Want You</option>
+                            <option value="kisskiss">Kiss Kiss</option>
+                            <option value="bodyrhythm">Body Rhythm</option>
+                            <option value="attention">Attention</option>
+                            <option value="kind">Kind</option>
+                        </select>
+                    </div>
+
+                    <!--PERGUNTA 5-->
+                    <div class="campo">
+                        <label class="pergunta">5. Qual o seu álbum favorito do Shinee?</label>
                         <label>
                             <input type="radio" name="albumfav" value="shineeworld">The Shinee World (2008)
                         </label>
@@ -131,10 +148,10 @@
                             <input type="radio" name="albumfav" value="dontcallme">Don't Call Me (2021)
                         </label>
                     </div>
-                    
-                    <!--PERGUNTA 4-->
+
+                    <!--PERGUNTA 6-->
                     <div class="campo">
-                        <label class="pergunta">8. Qual é o seu EP favorito do Shinee?</label>
+                        <label class="pergunta">6. Qual é o seu EP favorito do Shinee?</label>
                         <label>
                             <input type="radio" name="epfav" value="replay">Replay (2008)
                         </label>
@@ -152,15 +169,52 @@
                         </label>
                     </div>
 
-                    <!--PERGUNTA 5-->
+                    <!--PERGUNTA 7-->
                     <div class="campo">
-                        <label class="pergunta">9. Qual é a sua música favorita do Shinee?</label>
-                        <input type="text" name="musicafav">
+                        <label class="pergunta">7. Se você pudesse definir um conceito para o próximo álbum do SHINee, qual seria?</label>
+                        <textarea rows="6" style="width: 416px" id="conceito" name="conceito"></textarea>
                     </div>
 
+                    <!--PERGUNTA 8-->
+                    <div class="campo">
+                        <label class="pergunta">8. Qual versão do álbum <em>Don't Call Me</em> você mais gostou?</label>
+                        <label>
+                            <input type="radio" name="verfav" value="fakereality">Fake Reality
+                        </label>
+                        <label>
+                            <input type="radio" name="verfav" value="reality">Reality
+                        </label>
+                    </div>
+
+                    <!--PERGUNTA 9-->
+                    <div class="campo">
+                        <label class="pergunta">9. Qual item do álbum <em>Don't Call Me</em> você mais gostou?</label>
+                        <label>
+                            <input type="radio" name="itemfav" value="photobook">Photobook
+                        </label>
+                        <label>
+                            <input type="radio" name="itemfav" value="lyricspaper">Lyrics Paper
+                        </label>
+                        <label>
+                            <input type="radio" name="itemfav" value="phonecard">Phonecard
+                        </label>
+                        <label>
+                            <input type="radio" name="itemfav" value="poster">Pôster
+                        </label>
+                        <label>
+                            <input type="radio" name="itemfav" value="photocard">Photocard
+                        </label>
+                    </div>
+
+                    <!--PERGUNTA 10-->
+                    <div class="campo">
+                        <label class="pergunta">10. O que mais te surpreendeu no conceito de Don't Call Me?</label>
+                        <textarea rows="6" style="width: 416px" id="resposta" name="resposta"></textarea>
+
+                    </div>
 
                     <!--BOTÃO ENVIAR-->
-                    <button class="botao" type="submit" value="Enviar">Enviar</button>
+                    <button class="botao" type="submit" value="enviar">Enviar</button>
                 </form>
             </section>
         </main>
