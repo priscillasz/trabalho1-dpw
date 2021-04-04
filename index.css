@@ -4,19 +4,25 @@
 
     /*-------------GERAL-------------*/
 body {
-    background-color: #ffffff;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     height: 100%;
-    }
+}
 
 h1 {
     text-align: center;
-}
-
-h1, h2, h3, h4 {
     color: #F20519;
 }
+
+h2 {
+    color: #F20519;
+}
+
+h3 {
+    color: #F20519;
+}
+
 p {
     text-align: justify;
 }
@@ -24,23 +30,22 @@ p {
 strong{
     color: #0477BF;
 }
+
     /*-------------SCROLLBAR-------------*/
 ::-webkit-scrollbar {
     width: 10px;
 }
     
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0px grey;  /* apagar essa linha dps */
-    background-color: #ffffff;
+    background-color: white;
 }
     
 ::-webkit-scrollbar-thumb {
-    background: #33C0B8; 
-    border-radius: 0px;
+    background: #D9303E; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #107369; 
+    background: #940410; 
 }
 
     /*-------------IMAGEM CABEÇALHO TOPO-------------*/
@@ -74,23 +79,17 @@ body, html {
     padding-top: 15px;
 }
 
-.descricaotopo{
-    padding-top: 20px;
+.eetopo {
+    font-size: 74px;
 }
-
     /*-------------MENU-------------*/
-.navbar{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    text-transform: lowercase;
 }
     
 .navbar li {
@@ -115,22 +114,22 @@ body, html {
 
     /*-------------LINKS GERAIS-------------*/
 a:link {
-    color: #BF1744; 
+    color: #049DD9;
     text-decoration: none;
 }
 
 a:visited {
-    color: #D9117F; 
+    color: #0477BF;
     text-decoration: none;
 }
 
 a:hover {
-    color: #107369; 
+    color: #940410; 
     text-decoration: none; 
 }
 
 a:active {
-    color: orange; 
+    color: #F20519; 
     text-decoration: none; 
 }
 
@@ -140,10 +139,20 @@ a:active {
     width: 900px;
     padding: 10px;
     margin: auto;
+    max-width: 60%;
 }
 
 .sobre {
     text-align: center;
+    color: black;
+}
+
+.sobrep {
+    font-style: italic;
+}
+
+.sobrep:hover {
+    color: #0477BF;
 }
 
 .sobrep::first-letter {
@@ -152,16 +161,99 @@ a:active {
     color: black;
 }
 
+.shineesback {
+    font-weight: 900;
+}
+
+.ee {
+    font-size: 38px;
+}
+
+.imgdcm {
+    width: 40%;
+    float: left;
+}
+
+    /*-------------ORIGEM-------------*/
+.origem {
+    background-color: white;
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+    max-width: 60%;
+}
+
+#origemtitle {
+    color: black;
+    margin: 35px;
+    margin-bottom: -10px;
+}
+
+#shinee {
+    font-size: 40px;
+    margin-bottom: -10px;
+}
+
+.b li {
+    list-style-type: lower-roman;
+}
+
+img {
+    float: left;
+    width: 42.5%;
+    padding: 0 10px 0 0;
+}
+
+#img2 {
+    float: right;
+    width: 45%;
+    margin-left: 13px;
+}
+
+.img3 {
+    display: block;
+    width: 100%;
+}
+
+.img4 {
+    width: 55%;
+}
+
+.img5 {
+    float: right;
+    width: 45%;
+    margin-left: 13px;
+}
+
+.img6 {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.legenda {
+    font-style: italic;
+    font-size: 18px;
+}
+
+q {
+    font-style: oblique;
+}
+
 #tabela {
     text-align: center;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 table {
-    width: 60%;
+    width: 70%;
     border-spacing: 5px;
     text-align: center;
+}
+
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 table, th, td {
@@ -177,68 +269,17 @@ tr:nth-child(even) {
     background-color: #F5F5F5;
 }
 
-    /*-------------ORIGEM-------------*/
-.origem {
-    background-color: white;
-    width: 900px;
-    padding: 10px;
-    margin: auto;
+hr {
+    border-top: 1px dotted red;
 }
 
-.b li {
-    list-style-type: lower-roman;
-}
-
-img {
-    float: left;
-    width: 400px;
-    padding: 0 10px 0 0;
-}
-
-#img2 {
-    float: right;
-    width: 400px;
-    margin-left: 13px;
-}
-
-.conteudo2 {
-    position: relative;
-    width: 900px;
-}
-
-#img3 {
-    display: block;
-    width: 900px;
-}
-
-.overlay {
-    position: absolute; 
-    bottom: -600px; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 860px;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: left;
-}
-  
-.conteudo2:hover .overlay {
-    opacity: 1;
-}
-
-q {
-    font-style: oblique;
-}
     /*-------------QUIZ-------------*/
 .mainquiz {
     background-color: white;
     width: 900px;
     padding: 10px;
     margin: auto;
+    max-width: 60%;
 }
 
 .campoquiz {
@@ -248,14 +289,14 @@ q {
 
 .pergunta {
     font-weight: bold;
-    color: #33C0B8;
+    color: #0477BF;
 }
 
 li {
     color: black;
 }
 
-input, select, button {
+input, select {
     font-size: 1em;
     border-radius: 5px;
 }
@@ -271,7 +312,7 @@ input, select, button {
 
 .campo input[type="text"], .campo select {
     padding: 0.2em;
-    border: 1px solid #107369;
+    border: 1px solid #105773;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
@@ -281,12 +322,16 @@ input, select, button {
 }
 
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #c7f7f3;
+    background: #f7c7c7;
+}
+
+button {
+    border-radius: 20px;
 }
 
 .botao {
-    background-color: #33C0B8;
-    border: none;
+    background-color: #0477BF;
+    border: 2px solid #0477BF;
     color: white;
     padding: 8px 18px;
     text-align: center;
@@ -298,8 +343,10 @@ input, select, button {
 }
 
 .botao:hover {
-    background: #107369;
+    background: white;
     text-shadow: none;
+    color: #0477BF;
+    border: 2px solid #0477BF;
 }
 
     /*-------------REFERÊNCIAS-------------*/
@@ -308,4 +355,39 @@ input, select, button {
     width: 900px;
     padding: 10px;
     margin: auto;
+    max-width: 60%;
+}
+
+.referencia {
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 700px;
+    width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: lavender;
+}
+
+.referencia2 {
+    display: flex;
+    padding-left: 30px;
+}
+
+.textoref {
+    padding: 10px;
+}
+
+.titleref {
+    padding-left: 20px;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.imagemref {
+    float: left;
+    width: 377px;
+    padding-left: 12px;
+    padding-bottom: 10px;
 }
