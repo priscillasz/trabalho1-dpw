@@ -5,7 +5,7 @@
     /*-------------GERAL-------------*/
 body {
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 20px;
     height: 100%;
 }
@@ -27,7 +27,7 @@ p {
     text-align: justify;
 }
 
-strong{
+strong {
     color: #0477BF;
 }
 
@@ -79,9 +79,6 @@ body, html {
     padding-top: 15px;
 }
 
-.eetopo {
-    font-size: 74px;
-}
     /*-------------MENU-------------*/
 .navbar ul {
     list-style-type: none;
@@ -172,12 +169,13 @@ a:active {
 .imgdcm {
     width: 40%;
     float: left;
+    margin-top: 8px;
 }
 
     /*-------------ORIGEM-------------*/
 .origem {
     background-color: white;
-    width: 900px;
+    width: 1000px;
     padding: 10px;
     margin: auto;
     max-width: 60%;
@@ -202,12 +200,6 @@ img {
     float: left;
     width: 42.5%;
     padding: 0 10px 0 0;
-}
-
-#img2 {
-    float: right;
-    width: 45%;
-    margin-left: 13px;
 }
 
 .img3 {
@@ -237,6 +229,11 @@ img {
 
 q {
     font-style: oblique;
+}
+
+.itensalbum {
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 #tabela {
@@ -270,7 +267,7 @@ tr:nth-child(even) {
 }
 
 hr {
-    border-top: 1px dotted red;
+    border-top: 1px dotted #F20519;
 }
 
 .c li {
@@ -280,6 +277,7 @@ hr {
 .d li {
     list-style-type: square;
 }
+
     /*-------------QUIZ-------------*/
 .mainquiz {
     background-color: white;
@@ -399,4 +397,31 @@ button {
     float: left;
     width: 52%;
     padding-left: 12px;
+}
+
+.fontesreftitle{
+    font-size: 25px;
+    margin-bottom: -10px;
+    margin-left: 35px;
+}
+.fontesref {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.fontesref li {
+    display: inline-block;
+}
+
+.fontesref li a {
+    display: block;
+    color: white;
+    background-color: #F20519;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.fontesref li a:hover {
+    background-color: #0477BF;
 }
